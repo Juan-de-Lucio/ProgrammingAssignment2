@@ -33,3 +33,21 @@ cacheSolve <- function(x, ...) {
 	return(inv_x)
 	}
 	}
+
+
+## SAMPLE:
+
+##> x1 <- matrix(1:4,2,2)
+##> x2 = makeCacheMatrix(x1)
+
+##> cacheSolve(x2)
+##     [,1] [,2]
+##[1,]   -2  1.5
+##[2,]    1 -0.5
+
+##> cacheSolve(x2)
+##getting cached inverse matrix
+##     [,1] [,2]
+##[1,]   -2  1.5
+##[2,]    1 -0.5
+
